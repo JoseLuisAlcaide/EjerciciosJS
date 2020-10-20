@@ -1,21 +1,25 @@
-/* Realizar un scrip que al introducir un número entero positivo que representa ek número de
+/* Realizar un script que al introducir un número entero positivo que representa ek número de
  segundos que estamos confinado por una pandemia, nos convierta ese número a semanas,
  dias, horas, minutos,  segundos. Debe mostrar un mensaje tal como A semanas,
  B días, C horas, D minutos, E segundos.*/
-let tiempo = parseInt(prompt(`Introduce el número de segundos que llevas confinado`))
-            console.log(`El valor introducido es ${tiempo}`)
-if (tiempo<=0)
+
+ let tiempo=0
+ do {
+   tiempo = parseInt(prompt(`Introduce el número de segundos que llevas confinado`))
+   console.log(`El valor introducido es ${tiempo}`)
+   if (tiempo<=0)
         {
             console.log("El número introducido no es un número valido")
             window.alert("El número introducido no es un número valido")
 
         }
+    } while (tiempo<=0);
 
-let segundos = (tiempo)
+let segundos = tiempo
 if (segundos>=60)
         {
             let minutos = parseInt(segundos/60)
-            segundos= (segundos%60)
+            segundos= segundos%60
             console.log(`lleva confinado ${minutos} minutos ${segundos} segundos`)
         }
 let minutos = parseInt(tiempo/60)

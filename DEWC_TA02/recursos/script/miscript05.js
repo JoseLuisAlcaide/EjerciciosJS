@@ -13,9 +13,9 @@ console.log(`su IMC es ${imc}`);
 // console.log(`su IMC es ${imc2Decimal}`);
 document.write(`<p>Tu índice de masa corporal es ${imc}</p>`);
 // document.write(`<p>Tu índice de masa corporal es ${imc2Decimal}</p>`)
-let edad = window.prompt("Introduzca se eda en años");
+let edad = window.prompt("Introduzca se edad en años");
 console.log(`Su Edad es ${edad} años`);
-// lo que continua puedes utilizar estructura de control switch
+
 if (imc<22.0 && edad<45)
     {
         console.log(`Su riesgo de enfermedad coronaria es Bajo`)
@@ -34,6 +34,6 @@ if (imc<22.0 && edad>=45)
 if (imc>=22.0 && edad>=45)
     {
         console.log(`Su riesgo de enfermedad coronaria es Alto`)
-        document.write(`<p>Su riesgo de enfermedad coronaria es Alto</p>`)
+        document.write(`<p>Su riesgo de enfermedad coronaria es Alto</p>`) 
     }
 
