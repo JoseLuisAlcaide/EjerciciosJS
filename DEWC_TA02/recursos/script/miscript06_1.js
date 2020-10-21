@@ -25,8 +25,8 @@
     let minutos=parseInt(segundosHoras/60)
     let segundosMinutos=parseInt(segundosHoras%60)
     let segundos=(segundosMinutos/1)
-    // let segundos=parseInt(minutos%60)
-    console.log(`${semanas} Semanas ${dias} Dias ${horas} Horas ${minutos} Minutos ${segundos} Segundos `)
+
+  
    if (semanas>=1) {
      console.log(`${semanas} Semanas`)  
    } 
@@ -42,32 +42,6 @@
    if (segundos>=1) {
      console.log(`${segundos} Segundos`)  
    } 
+   
 
-// let minutos=parseInt(horas%3600)
-// let segundos=parseInt(minutos%60)
-
-// let dias=parseInt(tiempo/86400)
-/* }if (parseInt(tiempo%604800)|| tiempo<604800 && tiempo>=86400) {
-    
-    
-}*/
-
-/*let segundos=parseInt(tiempo/1);
-if (segundos<60){
-    console.log(`segundos ${segundos}`)
-}else if ((segundos>=60) && (segundos<3600)) {
-    minutos=parseInt(segundos/60)
-    segundos=(segundos%60)
-    console.log(` Minutos${minutos} Segundos ${segundos}`)
-}else if ((segundos>=3600) && (segundos<86400))
-    horas=parseInt(segundos/3600)
-    minutos=parseInt(segundos%3600)*/
-
-/*let minutos=parseInt(tiempo/60);
-let horas=parseInt(tiempo/3600);
-let dias=parseInt(tiempo/86400);
-let semanas=parseInt(tiempo/604800)
-if semanas>=1 {
-    console.log(`Semanas ${semanas} Dias ${dias} Horas ${horas} Minutos ${minutos} Segundos ${segundos}`)
-    
-}*/
+  
