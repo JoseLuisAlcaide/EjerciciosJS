@@ -11,7 +11,7 @@ let d4 = N-d1*1000+d2*100+d3*10;
 console.log(d1+d2+d3+d4);
 */
 
-let N = new String (dia+mes+anho);
+let N = new String(dia+mes+anho);
 let d1=parseInt(N[0])
 let d2=parseInt(N[1])
 let d3=parseInt(N[2])
