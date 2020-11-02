@@ -8,6 +8,7 @@ no teniendo en cuenta intentos en los que se introduce un dato incorrecto.*/
 let numAle=[]
 let error=0
 let intentos=0
+let acierto=0
 
 for (let i=0 ; i<1 ; i++) {
     numAle.push(parseInt(Math.random()*99+1))
@@ -27,6 +28,8 @@ do {
     }
     if (numAle==numUser){
             document.write(`<P>Enhorabuena Adivinastes el número</P>`)
+            acierto+=1
+            console.log(`acierto=${acierto}`)
     }
     if(numUser!=numAle) {
             intentos+=1
@@ -35,5 +38,5 @@ do {
 }while ((numUser<=0) || (numUser>100) ||(numUser!=numAle))
 
 
-let intentosTotal=(intentos-error+1)
+let intentosTotal=(intentos-error+acierto)
 document.write(`<p>Intentos=${intentosTotal}</p>`)
