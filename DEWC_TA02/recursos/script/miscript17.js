@@ -36,5 +36,4 @@ do {
 
 
 let intentosTotal=(intentos-error+1)
-console.log(intentos)
 document.write(`<p>Intentos=${intentosTotal}</p>`)
