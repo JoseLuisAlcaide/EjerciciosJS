@@ -15,7 +15,7 @@ for (let i=0 ; i<1 ; i++) {
     console.log(numAle)// Desactivar esta linea para no saber el número Aleatorio por consola
     
 }
-document.write(numAle) // Activar esta linea para ver el número Aleatorio en la ventana
+//document.write(numAle) // Activar esta linea para ver el número Aleatorio en la ventana
 let numUser=0
 do {
     numUser=parseInt(prompt(`Introduzca el numero `))
