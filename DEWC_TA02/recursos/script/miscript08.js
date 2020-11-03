@@ -13,6 +13,6 @@ if (operacion>=90){
     console.log(`La letra asignada es C`)
 } else if (operacion>=60){
     console.log(`La letra asignada es D`)
-} else (operacion>0){
+} else if (operacion>0){
     console.log(`La letra asignada es E`)
 }
