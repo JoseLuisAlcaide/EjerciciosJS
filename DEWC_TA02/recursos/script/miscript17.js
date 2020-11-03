@@ -10,33 +10,55 @@ let error=0
 let intentos=0
 let acierto=0
 
+/*
 for (let i=0 ; i<1 ; i++) {
     numAle.push(parseInt(Math.random()*99+1))
     //numAle[i]=parseInt(Math.random()*99+1)
     console.log(numAle)// Desactivar esta linea para no saber el número Aleatorio por consola
-    
-}
+}*/
+
+numAle=1+parseInt(Math.random()*99)
 //document.write(numAle) // Activar esta linea para ver el número Aleatorio en la ventana
+
+function perdir(cadena,numero1,numero2) {
+    let dato;
+    do {
+        dato=parseInt(prompt("Introduzca un "+cadena))
+        if (dato<numero1 || dato>numero2){
+            document.write("<p>El "+cadena+" no es correcto</p>")
+        }
+    } while (dato<numero1 || dato>numero2);  
+    return dato
+}
+
 let numUser=0
 do {
-    numUser=parseInt(prompt(`Introduzca el numero `))
-    if ((numUser<=0) || (numUser>100)){
-        error+=1
-        console.log(`El numero introducido es incorrecto`)
-        window.alert(`El numero introducido es incorrecto`)
-        console.log(`error=${error}`)
-    }
-    if (numAle==numUser){
+    numUser=pedir("numero",1,100)
+
+    if (numAle==numUser) {
             document.write(`<P>Enhorabuena Adivinastes el número</P>`)
-            acierto+=1
-            console.log(`acierto=${acierto}`)
     }
-    if(numUser!=numAle) {
-            intentos+=1
-            console.log(`intentos=${intentos}`)
+    intentos+=1
+    console.log(`intentos=${intentos}`)
+} while (numUser!=numAle)
+
+/*
+let numUser=0
+do {
+    let numUser;
+    do {
+        numUser=parseInt(prompt("Introduzca un numero "))
+        if (numUser<1 || numUser>100){
+            document.write("<p>El numero no es correcto</p>")
         }
-}while ((numUser<=0) || (numUser>100) ||(numUser!=numAle))
+    } while (numUser<1 || numUser>100);  
 
+    if (numAle==numUser) {
+            document.write(`<P>Enhorabuena Adivinastes el número</P>`)
+    }
+    intentos+=1
+    console.log(`intentos=${intentos}`)
+} while (numUser!=numAle)
+*/
 
-let intentosTotal=(intentos-error+acierto)
-document.write(`<p>Intentos=${intentosTotal}</p>`)
+document.write(`<p>Intentos=${intentos}</p>`)

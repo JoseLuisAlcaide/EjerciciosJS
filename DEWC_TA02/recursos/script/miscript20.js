@@ -13,9 +13,9 @@ if (numUser%2==0) {
     numUser=numUser/2;
     console.log(`${numUser} `);
     document.write(` ${numUser} ->`)
-}else {
+} else {
     numUser=numUser*3+1;
     console.log(`${numUser} `);
     document.write(` ${numUser} ->`)
 }
-}while (numUser !=1)
+} while (numUser !=1)

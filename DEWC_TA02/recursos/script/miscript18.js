@@ -8,8 +8,8 @@ document.writeln(`La letra de su D.N.I.:${nDni} es ${lDni[letra]}`)
 
 /*
 let nDni=parseInt(prompt(`Introduzca su numero de D.N.I.`));
-let letra=nDni%23;
-switch (letra){
+let nletra=nDni%23;
+switch (nletra){
     case 0:letra=`T` ; break;
     case 1:letra=`R` ; break;
     case 2:letra=`W` ; break;
