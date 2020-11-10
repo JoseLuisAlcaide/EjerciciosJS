@@ -20,7 +20,7 @@ for (let i=0 ; i<1 ; i++) {
 numAle=1+parseInt(Math.random()*99)
 //document.write(numAle) // Activar esta linea para ver el número Aleatorio en la ventana
 
-function perdir(cadena,numero1,numero2) {
+function pedir(cadena,numero1,numero2) {
     let dato;
     do {
         dato=parseInt(prompt("Introduzca un "+cadena))
