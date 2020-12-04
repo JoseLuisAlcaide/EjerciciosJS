@@ -5,9 +5,9 @@ let btn_calc=document.getElementById("btn-calcular");
 let txt_resultado=document.getElementById("resultado");
 
 btn_calc.addEventListener("click",convertir)
-
 function convertir() {
-  let fahrenheit=parseFloat(txt_temp.value);
+    let fahrenheit=parseFloat(txt_temp.value);
+    console.info(txt_temp)
   let conversor=parseInt((5/9)*(fahrenheit-32))
   txt_resultado.innerHTML="<h2>La temperatura en grados Celsius es "+conversor+"</h2>"
 }
